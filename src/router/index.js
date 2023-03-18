@@ -11,6 +11,10 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: '/',
+      redirect: '/counter',
+    },
+    {
       // wild card route
       path: '/:pathMatch(.*)*',
       name: 'not-found',
